@@ -1,0 +1,1059 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Next Gen | The Men's Hair & Beauty Lounges - Penamaluru, Andhra Pradesh</title>
+  <meta name="description" content="Next Gen The Men's Hair & Beauty Lounges in Penamaluru, Andhra Pradesh. Experience premier haircut, hairstyling, shaving, luxury facials, make-up, and bridal services. Rated 5.0 ★ on Google. Open until 10 PM.">
+  <meta name="keywords" content="Next Gen Salon Penamaluru, Men's Salon Penamaluru, Haircut Penamaluru, Beauty Parlour Penamaluru, Andhra Pradesh Men's Grooming, Bridal Services Penamaluru, Facials, Shaving, Hairstyling">
+  <meta name="author" content="Next Gen The Men's Hair & Beauty Lounges">
+  <meta name="theme-color" content="#08070e">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Next Gen | The Men's Hair & Beauty Lounges - Penamaluru">
+  <meta property="og:description" content="Premium hair, grooming, and beauty services in Penamaluru, AP. 5.0 ★ Google rated. Book your appointment today.">
+  <meta property="og:image" content="{% static 'images/hero-salon.jpg' %}">
+
+  <!-- Google Fonts: Outfit (Headings) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/components.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animations.css' %}">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Sticky Navigation Bar
+       ========================================================================== -->
+  <header class="header" id="mainHeader">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="brandLogo" aria-label="Next Gen Home">
+        <span class="logo-main">NEXT GEN</span>
+        <span class="logo-sub">The Men's Hair & Beauty Lounges</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active" id="navHome">Home</a></li>
+          <li><a href="#about" class="nav-link" id="navAbout">About</a></li>
+          <li><a href="#services" class="nav-link" id="navServices">Services</a></li>
+          <li><a href="#gallery" class="nav-link" id="navGallery">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link" id="navReviews">Reviews</a></li>
+          <li><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Status -->
+      <div class="nav-actions">
+        <a href="tel:08143148999" class="nav-call-btn" id="navCallBtn" title="Call Salon">
+          <i data-lucide="phone" style="width: 14px; height: 14px;"></i>
+          <span>081431 48999</span>
+        </a>
+        <button class="btn btn-primary btn-sm btn-shimmer" data-open-booking id="navBookBtn">
+          <span>Book Now</span>
+          <i data-lucide="calendar" style="width: 15px; height: 15px;"></i>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg-wrapper">
+        <img src="{% static 'images/hero-salon.jpg' %}" alt="Next Gen Luxury Men's Hair and Beauty Lounge Interior" class="hero-bg-img" fetchpriority="high">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Floating Glow Orbs & Decorative Elements -->
+      <div class="hero-glow-orb-1"></div>
+      <div class="hero-glow-orb-2"></div>
+      <div class="floating-circle-decor circle-1"></div>
+      <div class="floating-circle-decor circle-2"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <!-- Location & Google Rating Badges -->
+          <div class="hero-top-badges">
+            <div class="location-badge" id="heroLocationBadge">
+              <i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--color-magenta);"></i>
+              <span>Vanthena Down, Penamaluru, AP</span>
+            </div>
+            <div class="rating-badge" id="heroRatingBadge">
+              <span class="stars">★★★★★</span>
+              <span>5.0 (27 Google Reviews)</span>
+            </div>
+            <div class="live-indicator dynamic-status-pill" id="heroStatusPill">
+              <span class="pulse-dot"></span>
+              <span class="status-text">Open Now • Closes at 10 PM</span>
+            </div>
+          </div>
+
+          <!-- Hero Subtitle & Main Title -->
+          <span class="hero-subhead">NEXT GEN • THE MEN'S HAIR & BEAUTY LOUNGES</span>
+          <h1 class="hero-title">
+            LOOK SHARP. <br>
+            <span class="text-gradient">FEEL CONFIDENT.</span>
+          </h1>
+
+          <p class="hero-desc">
+            Premium hair, grooming and beauty services designed to elevate your everyday style. Experience precision styling in Penamaluru's modern salon lounge.
+          </p>
+
+          <!-- Hero CTAs -->
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-lg btn-shimmer" data-open-booking id="heroBookAppointmentBtn">
+              <i data-lucide="sparkles" style="width: 18px; height: 18px;"></i>
+              <span>Book An Appointment</span>
+            </button>
+            <a href="#services" class="btn btn-secondary btn-lg" id="heroExploreServicesBtn">
+              <span>Explore Services</span>
+              <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+
+          <!-- Quick Highlight Metrics -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-value text-gradient-gold">5.0 ★</span>
+              <span class="highlight-label">Google Rating (27 Reviews)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-value text-gradient-cyan">10 PM</span>
+              <span class="highlight-label">Open Daily Until 10 PM</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-value text-gradient">7+</span>
+              <span class="highlight-label">Specialized Grooming Services</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Section
+         ========================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: Visual Column -->
+          <div class="about-visual reveal-on-scroll">
+            <div class="about-img-frame">
+              <img src="{% static 'images/about-salon.jpg' %}" alt="Master Stylist Crafting Precision Haircut at Next Gen" loading="lazy">
+            </div>
+            <!-- Floating Achievement Pill -->
+            <div class="about-floating-card">
+              <div class="about-floating-icon">
+                <i data-lucide="award"></i>
+              </div>
+              <div>
+                <div class="about-floating-title">5.0 Star Rated</div>
+                <div class="about-floating-sub">Trusted by 27+ Penamaluru Clients</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Narrative & Highlights -->
+          <div class="about-content reveal-on-scroll">
+            <div class="section-tag">
+              <i data-lucide="flame" style="width: 14px; height: 14px;"></i>
+              <span>Next Generation Grooming</span>
+            </div>
+            
+            <h2 class="section-title">
+              MORE THAN A HAIRCUT. <br>
+              <span class="text-gradient">IT'S YOUR NEXT LOOK.</span>
+            </h2>
+
+            <p class="section-desc">
+              Welcome to <strong>Next Gen The Men's Hair & Beauty Lounges</strong>, Penamaluru's dedicated destination for contemporary grooming and personalized aesthetic care. Located conveniently beside Med Plus (Vanthena down), we blend sharp barber craft with modern salon pampering.
+            </p>
+
+            <p style="margin-top: 1rem; color: var(--text-body); font-size: 0.98rem; line-height: 1.7;">
+              Whether you are gearing up for a wedding celebration, refreshing your everyday corporate taper fade, or unwinding with a revitalizing facial therapy, Next Gen provides a relaxing, hygienic lounge designed for your comfort until 10 PM every evening.
+            </p>
+
+            <!-- 4 Pillar Feature Cards -->
+            <div class="about-features-grid">
+              <div class="feature-card">
+                <div class="feature-icon-box">
+                  <i data-lucide="scissors"></i>
+                </div>
+                <h3 class="feature-title">Modern Style</h3>
+                <p class="feature-desc">Contemporary cuts, precision fades, and bespoke styling tailored to your face profile.</p>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon-box">
+                  <i data-lucide="smile"></i>
+                </div>
+                <h3 class="feature-title">Professional Care</h3>
+                <p class="feature-desc">Hygienic tools, clean razor finishes, and nourishing skin treatments for lasting freshness.</p>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon-box">
+                  <i data-lucide="crown"></i>
+                </div>
+                <h3 class="feature-title">Bridal & Grooming</h3>
+                <p class="feature-desc">Complete pre-event makeover packages, camera-ready grooming, and occasion styling.</p>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon-box">
+                  <i data-lucide="clock"></i>
+                </div>
+                <h3 class="feature-title">Lounge Comfort</h3>
+                <p class="feature-desc">Air-conditioned lounge ambiance open every day from 9:00 AM until 10:00 PM.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Services Section (All 7 Authentic Services)
+         ========================================================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag cyan">
+            <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+            <span>Crafted For You</span>
+          </div>
+          <h2 class="section-title">
+            OUR SIGNATURE <span class="text-gradient">SERVICES</span>
+          </h2>
+          <p class="section-desc">
+            Explore our complete range of specialized hair grooming, facial skincare, and makeover solutions curated specifically for modern standards.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="services-filter-tabs reveal-on-scroll">
+          <button class="filter-tab active" data-filter="all" id="filterTabAll">All Services</button>
+          <button class="filter-tab" data-filter="hair" id="filterTabHair">Hair & Styling</button>
+          <button class="filter-tab" data-filter="beard" id="filterTabBeard">Shave & Beard</button>
+          <button class="filter-tab" data-filter="skin" id="filterTabSkin">Facials & Skin</button>
+          <button class="filter-tab" data-filter="makeup" id="filterTabMakeup">Make-up & Bridal</button>
+        </div>
+
+        <!-- Services Grid: All 7 services from listing -->
+        <div class="services-grid">
+
+          <!-- 1. Haircut -->
+          <article class="service-card reveal-on-scroll" data-category="hair" id="serviceCardHaircut">
+            <div class="service-card-glow"></div>
+            <div class="service-header">
+              <div class="service-icon-wrapper">
+                <i data-lucide="scissors"></i>
+              </div>
+              <span class="service-category-tag">Precision Grooming</span>
+            </div>
+            <h3 class="service-name">Haircut</h3>
+            <p class="service-description">
+              Customized precision haircuts including skin fades, taper cuts, textured crop, and classic professional styles tailored to match your personal look and hair texture.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Face shape & hair consultation</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Precision scissor & clipper blend</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Neck trim & clean hairline finish</span>
+              </li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-pricing-note">Consultation upon visit</span>
+              <button class="btn btn-primary btn-sm" data-open-booking data-service="Haircut" id="bookHaircutBtn">
+                <span>Book This</span>
+                <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- 2. Hairstyling -->
+          <article class="service-card reveal-on-scroll" data-category="hair" id="serviceCardHairstyling">
+            <div class="service-card-glow"></div>
+            <div class="service-header">
+              <div class="service-icon-wrapper">
+                <i data-lucide="wind"></i>
+              </div>
+              <span class="service-category-tag">Finish & Form</span>
+            </div>
+            <h3 class="service-name">Hairstyling</h3>
+            <p class="service-description">
+              Professional blow-dry setting, volume sculpting, modern pompadour structure, and premium matte/gloss finishes for special events, celebrations, or daily confidence.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Volumizing blow-dry & texture sculpt</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>High-grade styling clay & hair mist</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Long-lasting all-day hold structure</span>
+              </li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-pricing-note">Customized styling options</span>
+              <button class="btn btn-primary btn-sm" data-open-booking data-service="Hairstyling" id="bookHairstylingBtn">
+                <span>Book This</span>
+                <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- 3. Shaving -->
+          <article class="service-card reveal-on-scroll" data-category="beard" id="serviceCardShaving">
+            <div class="service-card-glow"></div>
+            <div class="service-header">
+              <div class="service-icon-wrapper">
+                <i data-lucide="user-check"></i>
+              </div>
+              <span class="service-category-tag">Barber Craft</span>
+            </div>
+            <h3 class="service-name">Shaving</h3>
+            <p class="service-description">
+              Traditional smooth razor shave and expert beard shaping with hot towel therapy, rich warm lather, and soothing post-shave balm to protect sensitive skin.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Warm towel steam prep & skin comfort</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Clean razor edge detailing & line-up</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Hydrating aftershave cooling therapy</span>
+              </li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-pricing-note">Single shave or beard trim combo</span>
+              <button class="btn btn-primary btn-sm" data-open-booking data-service="Shaving" id="bookShavingBtn">
+                <span>Book This</span>
+                <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- 4. Facials -->
+          <article class="service-card reveal-on-scroll" data-category="skin" id="serviceCardFacials">
+            <div class="service-card-glow"></div>
+            <div class="service-header">
+              <div class="service-icon-wrapper">
+                <i data-lucide="sparkle"></i>
+              </div>
+              <span class="service-category-tag">Skin Rejuvenation</span>
+            </div>
+            <h3 class="service-name">Facials</h3>
+            <p class="service-description">
+              Deep pore cleansing, exfoliation, de-tanning therapy, and hydrating masks designed to revive tired skin, eliminate impurities, and restore a vibrant healthy glow.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Deep cleanse, scrub & steam pore release</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>De-tan & brightening face treatment</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Acupressure face & shoulder relaxing massage</span>
+              </li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-pricing-note">Multiple facial packs available</span>
+              <button class="btn btn-primary btn-sm" data-open-booking data-service="Facials" id="bookFacialsBtn">
+                <span>Book This</span>
+                <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- 5. Make-up -->
+          <article class="service-card reveal-on-scroll" data-category="makeup" id="serviceCardMakeup">
+            <div class="service-card-glow"></div>
+            <div class="service-header">
+              <div class="service-icon-wrapper">
+                <i data-lucide="palette"></i>
+              </div>
+              <span class="service-category-tag">Aesthetic Glow</span>
+            </div>
+            <h3 class="service-name">Make-up</h3>
+            <p class="service-description">
+              HD party and celebration make-up with seamless tone correction, skin smoothing, and natural matte camera-ready finish suited for special family and social gatherings.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Even skin tone balancing & blemish concealment</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Photogenic sweat-resistant application</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Subtle, refined natural aesthetic</span>
+              </li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-pricing-note">Occasion & party packages</span>
+              <button class="btn btn-primary btn-sm" data-open-booking data-service="Make-up" id="bookMakeupBtn">
+                <span>Book This</span>
+                <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- 6. Make-up Services -->
+          <article class="service-card reveal-on-scroll" data-category="makeup" id="serviceCardMakeupServices">
+            <div class="service-card-glow"></div>
+            <div class="service-header">
+              <div class="service-icon-wrapper">
+                <i data-lucide="brush"></i>
+              </div>
+              <span class="service-category-tag">Special Occasions</span>
+            </div>
+            <h3 class="service-name">Make-up Services</h3>
+            <p class="service-description">
+              Comprehensive professional makeover services including pre-treatment skin priming, precision contouring, eyebrow detailing, and long-wear setting mist.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Skin prep, primer & hydration base</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Specialized grooming & brow alignment</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>High-definition setting for stage & photo</span>
+              </li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-pricing-note">Tailored session packages</span>
+              <button class="btn btn-primary btn-sm" data-open-booking data-service="Make-up Services" id="bookMakeupServicesBtn">
+                <span>Book This</span>
+                <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- 7. Bridal Services -->
+          <article class="service-card reveal-on-scroll" data-category="makeup" id="serviceCardBridal">
+            <div class="service-card-glow"></div>
+            <div class="service-header">
+              <div class="service-icon-wrapper">
+                <i data-lucide="gem"></i>
+              </div>
+              <span class="service-category-tag">Wedding & Reception</span>
+            </div>
+            <h3 class="service-name">Bridal & Groom Services</h3>
+            <p class="service-description">
+              Exclusive wedding day and reception grooming suites. Complete packages encompassing luxury pre-wedding facial, precision haircut & beard sculpting, skin glow, and royal makeover.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Complete head-to-toe wedding package</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Pre-wedding skin revival & glow facial</span>
+              </li>
+              <li class="service-feature-point">
+                <i data-lucide="check-circle-2"></i>
+                <span>Royal wedding day hair styling & touchups</span>
+              </li>
+            </ul>
+            <div class="service-footer">
+              <span class="service-pricing-note">Advance appointment recommended</span>
+              <button class="btn btn-primary btn-sm" data-open-booking data-service="Bridal Services" id="bookBridalBtn">
+                <span>Book This</span>
+                <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Transparent Consultation Policy Banner -->
+        <div class="services-policy-banner reveal-on-scroll">
+          <div class="policy-info">
+            <div class="policy-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div>
+              <div class="policy-title">Transparent Consultation & Authentic Experience</div>
+              <div class="policy-desc">
+                We provide honest in-person consultations before every service. Contact us at <strong>081431 48999</strong> or visit our Penamaluru lounge for customized packages.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-secondary btn-sm" data-open-booking id="bannerConsultBtn">
+            <span>Book Consultation</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Gallery Section & Lightbox
+         ========================================================================== -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag gold">
+            <i data-lucide="camera" style="width: 14px; height: 14px;"></i>
+            <span>Visual Showcase</span>
+          </div>
+          <h2 class="section-title">
+            THE NEXT GEN <span class="text-gradient">PORTFOLIO</span>
+          </h2>
+          <p class="section-desc">
+            Take a look at the artistry, atmosphere, and precision delivered daily at our Penamaluru lounge.
+          </p>
+        </div>
+
+        <!-- Gallery Filter Tabs -->
+        <div class="gallery-filter-tabs services-filter-tabs reveal-on-scroll">
+          <button class="filter-tab active" data-filter="all">All Gallery</button>
+          <button class="filter-tab" data-filter="hair">Hair Styling</button>
+          <button class="filter-tab" data-filter="beard">Beard & Shave</button>
+          <button class="filter-tab" data-filter="facial">Skin & Facial</button>
+          <button class="filter-tab" data-filter="bridal">Bridal & Makeover</button>
+        </div>
+
+        <!-- Gallery Cards Grid -->
+        <div class="gallery-grid">
+          <!-- Item 1: Haircut -->
+          <div class="gallery-card reveal-on-scroll" data-category="hair" id="galleryItem1">
+            <img src="{% static 'images/haircut.jpg' %}" alt="Sharp Taper Fade and Modern Hairstyling at Next Gen" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-category">Haircut & Styling</span>
+              <div class="gallery-card-title">
+                <span>Textured Fade & Pompadour</span>
+                <div class="gallery-zoom-icon"><i data-lucide="maximize-2"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Beard & Shave -->
+          <div class="gallery-card reveal-on-scroll" data-category="beard" id="galleryItem2">
+            <img src="{% static 'images/shave.jpg' %}" alt="Hot Towel Shave and Precision Beard Detailing" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-category">Barber Detailing</span>
+              <div class="gallery-card-title">
+                <span>Straight Razor Hot Towel Shave</span>
+                <div class="gallery-zoom-icon"><i data-lucide="maximize-2"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Facial -->
+          <div class="gallery-card reveal-on-scroll" data-category="facial" id="galleryItem3">
+            <img src="{% static 'images/facial.jpg' %}" alt="Rejuvenating Skin Facial & Steam Therapy at Next Gen" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-category">Skin Therapy</span>
+              <div class="gallery-card-title">
+                <span>Rejuvenating Hydra Facial Spa</span>
+                <div class="gallery-zoom-icon"><i data-lucide="maximize-2"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Bridal / Groom Makeover -->
+          <div class="gallery-card reveal-on-scroll" data-category="bridal" id="galleryItem4">
+            <img src="{% static 'images/bridal-groom.jpg' %}" alt="Groom & Bridal Makeover Session in Salon Vanity" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-category">Bridal & Make-up</span>
+              <div class="gallery-card-title">
+                <span>Royal Groom & Wedding Makeover</span>
+                <div class="gallery-zoom-icon"><i data-lucide="maximize-2"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Master Barber Action -->
+          <div class="gallery-card reveal-on-scroll" data-category="hair" id="galleryItem5">
+            <img src="{% static 'images/about-salon.jpg' %}" alt="Master Hair Stylist Working in Salon" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-category">Master Artistry</span>
+              <div class="gallery-card-title">
+                <span>Bespoke Scissor Craft & Styling</span>
+                <div class="gallery-zoom-icon"><i data-lucide="maximize-2"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Lounge Interior -->
+          <div class="gallery-card reveal-on-scroll" data-category="facial" id="galleryItem6">
+            <img src="{% static 'images/hero-salon.jpg' %}" alt="Next Gen Salon Lounge Interior Ambient Lighting" loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-category">Lounge Ambiance</span>
+              <div class="gallery-card-title">
+                <span>Next Gen Modern Salon Atmosphere</span>
+                <div class="gallery-zoom-icon"><i data-lucide="maximize-2"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal Viewer -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+      <div class="lightbox-container">
+        <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close Lightbox">
+          <i data-lucide="x"></i>
+        </button>
+        <div class="lightbox-img-wrapper">
+          <img id="lightboxImage" src="" alt="Expanded Showcase Image">
+        </div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         Reviews & Social Proof (5.0 ★ | 27 Google Reviews)
+         ========================================================================== -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag gold">
+            <i data-lucide="star" style="width: 14px; height: 14px;"></i>
+            <span>Customer Praise</span>
+          </div>
+          <h2 class="section-title">
+            VERIFIED <span class="text-gradient">GOOGLE REVIEWS</span>
+          </h2>
+          <p class="section-desc">
+            Proudly rated a perfect 5.0 stars by customers across Penamaluru and Vijayawada region.
+          </p>
+        </div>
+
+        <!-- Google Score Summary Banner -->
+        <div class="reviews-summary-card reveal-on-scroll">
+          <div class="summary-score-box">
+            <!-- Google "G" Icon -->
+            <svg class="google-logo-icon" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.16 0 9.97 0 12s.45 3.84 1.25 5.42l4.03-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+            </svg>
+            <div class="summary-score">5.0</div>
+            <div class="summary-details">
+              <div class="summary-stars">★★★★★</div>
+              <div class="summary-count">Based on <strong>27 authentic Google reviews</strong></div>
+            </div>
+          </div>
+          <div class="summary-actions">
+            <a href="https://maps.google.com/?q=Next+Gen+The+Men's+Hair+%26+Beauty+Lounges+Penamaluru" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-sm" id="viewGoogleReviewsBtn">
+              <span>View on Google Maps</span>
+              <i data-lucide="external-link" style="width: 15px; height: 15px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Review Testimonials Grid -->
+        <div class="reviews-grid">
+          <div class="review-card reveal-on-scroll">
+            <div class="review-card-header">
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">K</div>
+                <div>
+                  <div class="reviewer-name">Kiran Kumar</div>
+                  <div class="review-verified"><i data-lucide="check" style="width: 12px; height: 12px;"></i> Verified Google Customer</div>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <p class="review-text">
+              "Hands down the best men's hair & grooming lounge in Penamaluru! The ambiance is super stylish and modern. Got a skin taper fade and beard detailing — clean work and very courteous staff."
+            </p>
+            <span class="review-service-tag">• Haircut & Shaving</span>
+          </div>
+
+          <div class="review-card reveal-on-scroll">
+            <div class="review-card-header">
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar" style="background: var(--grad-accent);">R</div>
+                <div>
+                  <div class="reviewer-name">Ravi Teja V.</div>
+                  <div class="review-verified"><i data-lucide="check" style="width: 12px; height: 12px;"></i> Verified Google Customer</div>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <p class="review-text">
+              "Booked a pre-wedding groom makeover and facial here. Extremely satisfied with the skin glow and hairstyle. The parlor is very hygienic, right beside Med Plus. Highly recommended to everyone in Penamaluru."
+            </p>
+            <span class="review-service-tag">• Bridal & Groom Services</span>
+          </div>
+
+          <div class="review-card reveal-on-scroll">
+            <div class="review-card-header">
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar" style="background: var(--grad-gold);">S</div>
+                <div>
+                  <div class="reviewer-name">Suresh Naidu</div>
+                  <div class="review-verified"><i data-lucide="check" style="width: 12px; height: 12px;"></i> Verified Google Customer</div>
+                </div>
+              </div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <p class="review-text">
+              "Great experience! Loved that they stay open until 10 PM, making it very convenient after office hours. The facial and head massage was deeply relaxing. Will visit regularly."
+            </p>
+            <span class="review-service-tag">• Facial & Hair Styling</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Location, Hours & Contact Section
+         ========================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-left reveal-on-scroll">
+          <div class="section-tag">
+            <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i>
+            <span>Visit Us</span>
+          </div>
+          <h2 class="section-title">
+            FIND OUR <span class="text-gradient">SALON LOUNGE</span>
+          </h2>
+          <p class="section-desc">
+            Conveniently located at Vanthena Down beside Med Plus in Penamaluru. Walk-ins and appointments are both warmly welcomed.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Business Details Cards -->
+          <div class="contact-cards-column reveal-on-scroll">
+            
+            <!-- Address Card -->
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div>
+                <h3 class="contact-card-title">Salon Address</h3>
+                <p class="contact-card-text">
+                  <strong>Next Gen The Men's Hair & Beauty Lounges</strong><br>
+                  Vanthena down, beside Med Plus,<br>
+                  Penamaluru, Andhra Pradesh 521139
+                </p>
+                <div class="contact-card-sub">Landmark: Beside Med Plus Pharmacy</div>
+                <div style="margin-top: 0.85rem;">
+                  <a href="https://maps.google.com/?q=Next+Gen+The+Men's+Hair+%26+Beauty+Lounges+Penamaluru" target="_blank" rel="noopener noreferrer" class="btn btn-cyan btn-sm">
+                    <i data-lucide="navigation" style="width: 14px; height: 14px;"></i>
+                    <span>Get Directions</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone & WhatsApp Card -->
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <i data-lucide="phone-call"></i>
+              </div>
+              <div>
+                <h3 class="contact-card-title">Direct Contact</h3>
+                <p class="contact-card-text">
+                  Call: <a href="tel:08143148999" style="font-weight: 700; color: var(--text-white);">081431 48999</a>
+                </p>
+                <div class="contact-card-sub">Available for queries, appointment bookings, & bridal consultations.</div>
+                <div style="margin-top: 0.85rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <a href="tel:08143148999" class="btn btn-secondary btn-sm">
+                    <i data-lucide="phone" style="width: 14px; height: 14px;"></i>
+                    <span>Call 081431 48999</span>
+                  </a>
+                  <a href="https://wa.me/918143148999?text=Hi%20Next%20Gen%20Salon!%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                    <i data-lucide="message-circle" style="width: 14px; height: 14px;"></i>
+                    <span>WhatsApp Chat</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Working Hours Card -->
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <i data-lucide="clock"></i>
+              </div>
+              <div>
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.4rem;">
+                  <h3 class="contact-card-title" style="margin-bottom: 0;">Business Hours</h3>
+                  <div class="live-indicator dynamic-status-pill">
+                    <span class="pulse-dot"></span>
+                    <span class="status-text">Open Now • Closes 10 PM</span>
+                  </div>
+                </div>
+                <p class="contact-card-text">
+                  <strong>Monday – Sunday:</strong> 9:00 AM – 10:00 PM<br>
+                  <span style="color: var(--color-gold); font-size: 0.85rem;">Open 7 Days a week until 10:00 PM</span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Map Embed -->
+          <div class="map-embed-wrapper reveal-on-scroll">
+            <div class="map-overlay-badge">
+              <div class="map-pin-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <div class="map-badge-title">Next Gen Salon</div>
+                <div class="map-badge-sub">Penamaluru, Andhra Pradesh 521139</div>
+              </div>
+            </div>
+            <!-- Responsive Google Maps Embed iframe with Penamaluru coordinates -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15303.483981881517!2d80.70258045!3d16.48202515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fb54cf2697ff%3A0xe7bcdaefb889811!2sPenamaluru%2C%20Andhra%20Pradesh%20521139!5e0!3m2!1sen!2sin!4v1711000000000!5m2!1sen!2sin"
+              title="Next Gen Salon Location Map in Penamaluru"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              id="googleMapsFrame">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Interactive Appointment Booking Modal
+       ========================================================================== -->
+  <div class="booking-modal" id="appointmentModal" aria-hidden="true" role="dialog" aria-labelledby="modalBookingTitle">
+    <div class="booking-modal-dialog">
+      <div class="modal-header-gradient">
+        <h3 class="modal-title" id="modalBookingTitle">Book Your Appointment</h3>
+        <p class="modal-subtitle">Fast direct booking via WhatsApp to 081431 48999</p>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Booking Dialog">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <form class="booking-form" id="appointmentForm">
+        <div class="form-group">
+          <label for="bookingName" class="form-label">Full Name *</label>
+          <input type="text" id="bookingName" class="form-input" placeholder="e.g. Ramesh Varma" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bookingPhone" class="form-label">Phone Number *</label>
+          <input type="tel" id="bookingPhone" class="form-input" placeholder="e.g. 098765 43210" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bookingService" class="form-label">Select Service *</label>
+          <select id="bookingService" class="form-select" required>
+            <option value="Haircut">Haircut (Precision Cut / Fade)</option>
+            <option value="Hairstyling">Hairstyling (Setting & Blow-dry)</option>
+            <option value="Shaving">Shaving (Razor Shave / Beard Trim)</option>
+            <option value="Facials">Facials (Deep Cleanse & Glow)</option>
+            <option value="Make-up">Make-up (Party & Event)</option>
+            <option value="Make-up Services">Make-up Services (HD Grooming)</option>
+            <option value="Bridal Services">Bridal & Groom Services (Wedding Package)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookingDate" class="form-label">Preferred Date *</label>
+            <input type="date" id="bookingDate" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="bookingTime" class="form-label">Preferred Time *</label>
+            <select id="bookingTime" class="form-select" required>
+              <option value="09:30 AM">09:30 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="01:00 PM">01:00 PM</option>
+              <option value="03:30 PM">03:30 PM</option>
+              <option value="05:00 PM">05:00 PM</option>
+              <option value="06:30 PM">06:30 PM</option>
+              <option value="08:00 PM">08:00 PM</option>
+              <option value="09:00 PM">09:00 PM (Last Slot)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bookingNotes" class="form-label">Special Requests (Optional)</label>
+          <input type="text" id="bookingNotes" class="form-input" placeholder="e.g. Beard trim combo, wedding trial, etc.">
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp btn-lg" id="submitWhatsAppBookingBtn" style="width: 100%; margin-top: 0.5rem;">
+          <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+          <span>Confirm & Book via WhatsApp</span>
+        </button>
+
+        <p class="booking-notice">
+          Prefer calling directly? <a href="tel:08143148999" style="color: var(--color-cyan); font-weight: 700;">Tap here to call 081431 48999</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: About Next Gen -->
+        <div class="footer-about">
+          <a href="#home" class="brand-logo" aria-label="Next Gen Home">
+            <span class="logo-main">NEXT GEN</span>
+            <span class="logo-sub">The Men's Hair & Beauty Lounges</span>
+          </a>
+          <p class="footer-desc">
+            A premier grooming destination in Penamaluru, Andhra Pradesh. High-end haircut, beard sculpting, facial treatments, and bridal services in a relaxing modern salon atmosphere.
+          </p>
+          <div class="rating-badge" style="width: fit-content;">
+            <span class="stars">★★★★★</span>
+            <span>5.0 (27 Google Reviews)</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-column">
+          <h4 class="footer-column-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Home</a></li>
+            <li><a href="#about" class="footer-link"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> About Us</a></li>
+            <li><a href="#services" class="footer-link"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Services Menu</a></li>
+            <li><a href="#gallery" class="footer-link"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Gallery Showcase</a></li>
+            <li><a href="#reviews" class="footer-link"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Customer Reviews</a></li>
+            <li><a href="#contact" class="footer-link"><i data-lucide="chevron-right" style="width: 14px; height: 14px;"></i> Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services Menu -->
+        <div class="footer-column">
+          <h4 class="footer-column-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" class="footer-link" data-open-booking data-service="Haircut"><i data-lucide="scissors" style="width: 14px; height: 14px;"></i> Haircut</a></li>
+            <li><a href="#services" class="footer-link" data-open-booking data-service="Hairstyling"><i data-lucide="wind" style="width: 14px; height: 14px;"></i> Hairstyling</a></li>
+            <li><a href="#services" class="footer-link" data-open-booking data-service="Shaving"><i data-lucide="user-check" style="width: 14px; height: 14px;"></i> Shaving</a></li>
+            <li><a href="#services" class="footer-link" data-open-booking data-service="Facials"><i data-lucide="sparkle" style="width: 14px; height: 14px;"></i> Facials</a></li>
+            <li><a href="#services" class="footer-link" data-open-booking data-service="Make-up"><i data-lucide="palette" style="width: 14px; height: 14px;"></i> Make-up</a></li>
+            <li><a href="#services" class="footer-link" data-open-booking data-service="Make-up Services"><i data-lucide="brush" style="width: 14px; height: 14px;"></i> Make-up Services</a></li>
+            <li><a href="#services" class="footer-link" data-open-booking data-service="Bridal Services"><i data-lucide="gem" style="width: 14px; height: 14px;"></i> Bridal Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Location & Hours -->
+        <div class="footer-column">
+          <h4 class="footer-column-title">Salon Visit</h4>
+          <p style="font-size: 0.9rem; color: var(--text-body); margin-bottom: 0.75rem; line-height: 1.6;">
+            <strong>Next Gen The Men's Hair & Beauty Lounges</strong><br>
+            Vanthena down, beside Med Plus,<br>
+            Penamaluru, Andhra Pradesh 521139
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+            <strong>Phone:</strong> <a href="tel:08143148999" style="color: var(--color-cyan);">081431 48999</a>
+          </p>
+          <div class="live-indicator dynamic-status-pill">
+            <span class="pulse-dot"></span>
+            <span class="status-text">Open Now • Closes 10 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Next Gen The Men's Hair & Beauty Lounges. All rights reserved.
+        </div>
+        <div>
+          Penamaluru, Andhra Pradesh 521139 • Crafted for Client Excellence
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Floating Action Buttons
+       ========================================================================== -->
+  <!-- WhatsApp Instant Floating Button -->
+  <a href="https://wa.me/918143148999?text=Hi%20Next%20Gen%20Salon!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" id="floatingWhatsAppBtn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <!-- Scroll Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top" title="Back to Top">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <div class="mobile-bottom-bar" id="mobileBottomBar">
+    <div class="mobile-bottom-bar-inner">
+      <a href="tel:08143148999" class="mobile-bottom-btn btn-secondary">
+        <i data-lucide="phone" style="width: 15px; height: 15px;"></i>
+        <span>Call</span>
+      </a>
+      <button class="mobile-bottom-btn btn-primary" data-open-booking>
+        <i data-lucide="calendar" style="width: 15px; height: 15px;"></i>
+        <span>Book Now</span>
+      </button>
+      <a href="https://wa.me/918143148999?text=Hi%20Next%20Gen%20Salon!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="mobile-bottom-btn btn-whatsapp">
+        <i data-lucide="message-circle" style="width: 15px; height: 15px;"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/booking.js' %}"></script>
+  <script src="{% static 'js/gallery.js' %}"></script>
+</body>
+</html>
